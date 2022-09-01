@@ -6,7 +6,7 @@
     <meta name="description" content="Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come iniziare in modo facile." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/all.css" />
+    <script src="https://kit.fontawesome.com/6daa2bf1fc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/stile.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,9 +23,15 @@
       </div>
       <nav id="nav_header">
         <ul>
-          <li><a href="index.html" title="Home Page">Home</a></li>
-          <li><a href="articoli.html" title="Elenco degli articoli tecnici pubblicati">Articoli</a></li>
-          <li><a href="contatti.html" title="Candidati inviando un tuo cv">Lavora con noi</a></li>
+          <li>
+            <a href="index.html" title="Home Page"><i class="fa-solid fa-arrow-right"></i>Home<i class="fa-solid fa-arrow-left"></i></a>
+          </li>
+          <li>
+            <a href="articoli.html" title="Elenco degli articoli tecnici pubblicati"><i class="fa-solid fa-arrow-right"></i>Articoli<i class="fa-solid fa-arrow-left"></i></a>
+          </li>
+          <li>
+            <a href="contatti.html" title="Candidati inviando un tuo cv"><i class="fa-solid fa-arrow-right"></i>Lavora con noi<i class="fa-solid fa-arrow-left"></i></a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -37,20 +43,20 @@
         <h1>Come creare un template per i post</h1>
 
         <p class="p_grey">
-          <i class="fa-solid fa-pen"></i> di Mario Rossi - <span><i class="fa-regular fa-clock"></i> pubblicato il 25-10-2020</span>
+          <i class="fa-solid fa-pen"></i>di Mario Rossi - <span> <i class="fa-solid fa-clock"></i>pubblicato il 25-10-2020</span>
         </p>
 
         <p class="p_list">La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le <strong>parti comuni</strong> da applicare a tutte le pagine</p>
 
-        <p>Le varie aree saranno quindi suddivise in:</p>
-        <ul>
+        <p class="paragrafo_lista">Le varie aree saranno quindi suddivise in:</p>
+        <ul id="ul_main">
           <li>Contenuti di intestazione del tag <code>&lt;header&gt;</code></li>
           <li>Contenuti centrali variabili del tag <code>&lt;main&gt;</code> (corpo principale)</li>
           <li>Contenuti di fine pagina comuni, da inserire nel tag <code>&lt;footer&gt;</code></li>
         </ul>
 
-        <h2>Formattazione del codice</h2>
-        <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da <strong>selezionare con i CSS</strong>. Perciò i passi saranno:</p>
+        <h2 id="h2_piccolo">Formattazione del codice</h2>
+        <p id="p_di_h2">Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da <strong>selezionare con i CSS</strong>. Perciò i passi saranno:</p>
         <ol>
           <li>Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato</li>
           <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
@@ -91,7 +97,7 @@
               <td>80&percnt;</td>
               <td>51&percnt;</td>
             </tr>
-            <tr>
+            <tr id="tr_blue">
               <td>2012</td>
               <td>100&percnt;</td>
               <td>76&percnt;</td>
@@ -103,17 +109,19 @@
           Un test di validazione potrà essere fatto tramite il <a href="https://jigsaw.w3.org/css-validator/" target="blank" title="Validatore CSS online del W3C">tool online</a> dedicato allo scopo.
           Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:
         </p>
-
-        <iframe
-          width="300"
-          height="300"
-          src="https://www.youtube.com/embed/dvOvHXruEDM"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        
+          <iframe
+            width="300"
+            height="300"
+            src="https://www.youtube.com/embed/dvOvHXruEDM"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        
 
         <section>
+          <div id="novità">
           <h2>Novità</h2>
           <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
 
@@ -125,6 +133,7 @@
           </form>
         </section>
       </article>
+    </div>
 
       <aside>
         <h2>Articoli correlati</h2>

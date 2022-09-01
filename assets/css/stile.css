@@ -4,12 +4,13 @@
 } 
 body {
     font-family: 'Poppins', sans-serif;
+    
 }
 /* HEADER */
 header {
 background-color: #337492;
 width: 90vw;
-height: 90vh;
+height: 72vh;
 margin: 5%;
 text-transform: uppercase;
 box-shadow: 5px 5px 3px #888888;
@@ -20,14 +21,14 @@ box-shadow: 5px 5px 3px #888888;
 }
 
 #div_header img  {
-    margin: 3em;
+    margin: 2em;
 }
 
 #div_header p {
     
     color: white;
 font-size: 20px;
-margin: 3em;
+margin: 2em;
 }
 #nav_header {
     text-align: center;
@@ -59,6 +60,14 @@ article {
 letter-spacing: 1px;
 }
 
+
+
+
+
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+
 article h1{
     font-size: 36px;
     margin-bottom: 1em;
@@ -75,23 +84,68 @@ strong {
 }
 .p_list {
    
-        margin: 2em 0 2em 0;
-      }
+    font-size: 18px;
+    margin-bottom: 2em;
+}
+      
 code{
     background: #d0caca;
 border-radius: 5px;
+border: solid gray 1px;
 }
+
+.fa-solid{
+    margin: 3px;
+}
+.paragrafo_lista{
+    margin-bottom: 1em;
+    font-size: 18px;
+}
+
+#ul_main {
+    margin-left: 1em;
+    font-size: 18px;
+    margin-bottom: 1em;
+  }
+  #h2_piccolo{
+    font-size: 18px;
+
+  }
+ 
+  #p_di_h2 {
+    font-size: 18px;
+margin-bottom: 1em;
+  }
+
   
-
-
-
-/* ELEMENTI NEL MAIN - ARTICLE */
-
-
 
 /* TABELLE */
 
+caption{
+    font-weight: bold;
+}
+thead {
+    background-color: #5138ff;
+}
+th{
+    border: solid white 1px;
+}
+tr {
+
+        border-bottom: solid 1px gray;
+}
+#tr_blue {
+    border-bottom: solid 1px blue;
+}
+
+table{
+    width: 20em;
+}
+
 /* FORM */
+#novità {
+    background-color: #c7c7c7;
+}
 
 /* ELEMENTI NELL' ASIDE */
 
