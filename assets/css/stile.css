@@ -124,23 +124,32 @@ margin-bottom: 1em;
 caption{
     font-weight: bold;
 }
-thead {
+
+.content-table {
+border-collapse: collapse;
+margin: 25px 0;
+font-size: 0.9em;
+margin: auto;
+text-align: center;
+}
+
+.table-head tr{
     background-color: #5138ff;
+    font-weight: bold;
+   
 }
-th{
-    border: solid white 1px;
+.content-table th,
+.content-table td{
+    padding: 12px 15px;
 }
-tr {
+.content-table  tr {
+    border-bottom: 1px solid lightgrey;
+}
+.content-table tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
 
-        border-bottom: solid 1px gray;
-}
-#tr_blue {
-    border-bottom: solid 1px blue;
-}
 
-table{
-    width: 20em;
-}
 
 /* FORM */
 #novità {
