@@ -1,6 +1,14 @@
 /* IMPOSTAZIONI GENERALI */
- body {
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
     background-image: url(../img/sfondo.png);
+    background-size: auto;
+    background-position: center;
+    width: 100%;
 } 
 body {
     font-family: 'Poppins', sans-serif;
@@ -10,8 +18,8 @@ body {
 header {
 background-color: #337492;
 width: 90vw;
-height: 72vh;
-margin: 5%;
+height: 70vh;
+margin: auto;
 text-transform: uppercase;
 box-shadow: 5px 5px 3px #888888;
 }
@@ -28,11 +36,14 @@ box-shadow: 5px 5px 3px #888888;
     
     color: white;
 font-size: 20px;
-margin: 2em;
 }
 #nav_header {
     text-align: center;
     color: white;
+    margin-right: 20px;
+    font-weight: bold;
+    line-height: 2em;
+    margin-top: 2em;
     
 }
 #nav_header a{
@@ -69,9 +80,10 @@ letter-spacing: 1px;
 
 
 article h1{
-    font-size: 36px;
+    font-size: 35px;
     margin-bottom: 1em;
     line-height: 48px;
+    font-weight: 600;
   }
 
 .p_grey {
@@ -85,11 +97,11 @@ strong {
 .p_list {
    
     font-size: 18px;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
       
 code{
-    background: #d0caca;
+    background: lightgray;
 border-radius: 5px;
 border: solid gray 1px;
 }
@@ -104,11 +116,12 @@ border: solid gray 1px;
 
 #ul_main {
     margin-left: 1em;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 1em;
   }
   #h2_piccolo{
     font-size: 18px;
+    margin-bottom: -16px;
 
   }
  
@@ -123,6 +136,7 @@ margin-bottom: 1em;
 
 caption{
     font-weight: bold;
+    font-style: italic;
 }
 
 .content-table {
