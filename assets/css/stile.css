@@ -229,9 +229,22 @@ iframe {
     font-size: 13px;
     text-indent: 7em;
 }
+hr {
+    border: none;
+}
 
 /* FOOTER */
-#gradient {
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(15,78,101,1) 100%); 
+footer {
+     color: white;
+     padding: 4px 9px 26px 10px;
+    margin: 5%;
+     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(15,78,101,1) 100%); 
+     line-height: 24px;
+     box-shadow: 5px 5px 3px #888888;
+    }
+footer p {
+    text-align: center;
+}
+footer a {
+    color: hotpink;
 }
